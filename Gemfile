@@ -50,9 +50,7 @@ group :development, :test do
   gem "byebug"
 end
 
-  # gem 'net-ssh', '~>7.2', '>=7.2.1'
-  # gem 'rsa'
-  # gem 'ed25519', '>=1.2'
+  gem 'net-ssh', '~>7.2', '>=7.2.1'
 
 
 group :development do

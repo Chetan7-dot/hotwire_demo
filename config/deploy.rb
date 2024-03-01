@@ -2,7 +2,9 @@
 lock "~> 3.18.0"
 
 set :application, "MasterDetailApp"
-set :repo_url, "git@github.com:Chetan7-dot/hotwire_demo.git"
+set :repo_url, " https://github.com/Chetan7-dot/hotwire_demo.git"
+set :deploy_to, '/home/ubuntu/MasterDetailApp'
+
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
