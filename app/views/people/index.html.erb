@@ -1,0 +1,17 @@
+<h1>People</h1>
+
+<%= render partial: 'create_link' %>
+
+<br>
+
+<h2 class='mt-3'>People</h2>
+
+<%= turbo_stream_from 'people' %>
+
+<%= turbo_frame_tag "people" do %>
+  <% if @people.any? %>
+    <%= render partial: 'person', collection: @people %>
+  <% else %>
+    <p>No people available</p>
+  <% end %>
+<% end %>
