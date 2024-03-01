@@ -50,9 +50,21 @@ group :development, :test do
   gem "byebug"
 end
 
+  # gem 'net-ssh', '~>7.2', '>=7.2.1'
+  # gem 'rsa'
+  # gem 'ed25519', '>=1.2'
+
+
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
+
+  gem 'capistrano'
+  gem 'capistrano-bundler'
+  gem 'capistrano-passenger', '>= 0.1.1'
+  gem 'capistrano-rails'
+  gem 'capistrano-rbenv'
+
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"

@@ -2,7 +2,7 @@
 lock "~> 3.18.0"
 
 set :application, "MasterDetailApp"
-set :repo_url, "git@example.com:me/my_repo.git"
+set :repo_url, "git@github.com:Chetan7-dot/hotwire_demo.git"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
@@ -37,3 +37,6 @@ set :repo_url, "git@example.com:me/my_repo.git"
 
 # Uncomment the following to require manually verifying the host key before first deploy.
 # set :ssh_options, verify_host_key: :secure
+
+set :rbenv_ruby, '3.3.0'
+set :passenger_restart_with_touch, true
