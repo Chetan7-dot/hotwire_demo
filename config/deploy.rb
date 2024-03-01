@@ -11,6 +11,7 @@ set :deploy_to, '/home/ubuntu/MasterDetailApp'
 
 # Default deploy_to directory is /var/www/my_app_name
 # set :deploy_to, "/var/www/my_app_name"
+append :linked_files, "config/database.yml", 'config/master.key'
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
@@ -40,5 +41,5 @@ set :deploy_to, '/home/ubuntu/MasterDetailApp'
 # Uncomment the following to require manually verifying the host key before first deploy.
 # set :ssh_options, verify_host_key: :secure
 
-set :rbenv_ruby, '3.3.0'
+set :rvm_ruby, '3.3.0'
 set :passenger_restart_with_touch, true
