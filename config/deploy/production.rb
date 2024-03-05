@@ -64,7 +64,7 @@ set :branch, :main
 
 set :rails_env, 'production'
 set :puma_env, fetch(:rack_env, fetch(:rails_env, 'production'))
-server 'ec2-13-51-251-94.eu-north-1.compute.amazonaws.com', user: 'ubuntu', roles: %w{web app db}
+server 'ec2-13-48-57-179.eu-north-1.compute.amazonaws.com', user: 'ubuntu', roles: %w{web app db}
 set :ssh_options, {
   forward_agent: true,
   user: 'ubuntu',

@@ -3,7 +3,7 @@ lock "~> 3.18.0"
 
 set :application, "MasterDetailApp"
 set :repo_url, " https://github.com/Chetan7-dot/hotwire_demo.git"
-set :deploy_to, '/home/ubuntu/MasterDetailApp'
+set :deploy_to, '/home/ubuntu/hotwire_demo'
 
 
 # Default branch is :master
@@ -41,5 +41,5 @@ append :linked_files, "config/database.yml", 'config/master.key'
 # Uncomment the following to require manually verifying the host key before first deploy.
 # set :ssh_options, verify_host_key: :secure
 
-set :rvm_ruby, '3.3.0'
+set :rbenv_ruby, '3.2.2'
 set :passenger_restart_with_touch, true

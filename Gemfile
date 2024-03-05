@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-ruby "3.3.0"
+ruby "3.2.2"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.1.3"
@@ -61,7 +61,7 @@ group :development do
   gem 'capistrano-bundler'
   gem 'capistrano-passenger', '>= 0.1.1'
   gem 'capistrano-rails'
-  gem 'capistrano-rvm'
+  gem 'capistrano-rbenv'
 
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
